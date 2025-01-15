@@ -12,7 +12,7 @@ header {
   background-color: #343a40;
   color: #fff;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 header h1 {
@@ -21,8 +21,8 @@ header h1 {
 }
 
 header p {
+  margin: 0.5rem 0 0;
   font-size: 1rem;
-  margin-top: 0.5rem;
 }
 
 /* Navigation Styling */
@@ -35,11 +35,11 @@ nav {
   list-style: none;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 .nav-links li {
-  margin: 1rem 0; /* Add space between the list items */
-  text-align: center;
+  margin: 1rem 0;
 }
 
 .nav-links a {
@@ -49,13 +49,17 @@ nav {
   padding: 0.5rem 1rem;
   display: inline-block;
   width: 100%;
-  transition: background-color 0.3s ease;
+  box-sizing: border-box; /* Ensures padding is included in width */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
 .nav-links a:hover {
-  background-color: #1e90ff;
+  background-color: #1e90ff; /* Blue highlight */
   color: #fff;
+  box-shadow: inset 0 0 0 2px #1e90ff; /* Keeps blue mark within box bounds */
 }
+
+
 
 /* Main Section Styling */
 main {
@@ -63,18 +67,17 @@ main {
 }
 
 .season-highlights {
-  margin-top: 2rem;
   text-align: center;
+  margin: 2rem 0;
 }
 
 .season-highlights h2 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
 }
 
 .season-highlights p {
   font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 /* Footer Styling */
@@ -82,124 +85,18 @@ footer {
   background-color: #343a40;
   color: #fff;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem;
   margin-top: 2rem;
-  position: relative;
-  bottom: 0;
-  width: 100%;
 }
 
 footer p {
+  margin: 0;
   font-size: 1rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  header p {
-    font-size: 0.9rem;
-  }
-
-  .nav-links a {
-    font-size: 1rem;
-  }
-
-  .season-highlights h2 {
-    font-size: 1.8rem;
-  }
-
-  .season-highlights p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  header p {
-    font-size: 0.8rem;
-  }
-
-  .nav-links a {
-    font-size: 0.9rem;
-  }
-
-  .season-highlights h2 {
-    font-size: 1.6rem;
-  }
-
-  .season-highlights p {
-    font-size: 0.9rem;
-  }
-
-  footer {
-    font-size: 0.9rem;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Teams Section Styling */
 .teams {
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
 .teams h2 {
@@ -259,43 +156,11 @@ footer p {
   color: #0056b3;
 }
 
-/* Responsive Design for Teams Section */
-@media (max-width: 768px) {
-  .team-card {
-    width: 220px;
-  }
-}
-
-@media (max-width: 480px) {
-  .team-card {
-    width: 100%;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Player Table Styling */
 .player-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1.5rem auto;
+  margin: 1.5rem 0;
   font-size: 1rem;
   text-align: center;
 }
@@ -317,6 +182,7 @@ footer p {
 .player-table tr:hover {
   background-color: #f1f1f1;
 }
+
 /* Back Button Styling */
 .back-to-previous {
   text-align: center;
@@ -343,82 +209,61 @@ footer p {
 .btn-back:active {
   transform: scale(0.98);
 }
-/* Responsive Design for Mobile */
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .player-table th, .player-table td {
-    padding: 0.6rem;
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .team-card {
+    width: 220px;
   }
 
   .player-table {
     font-size: 0.9rem;
   }
+
+  .player-table th, .player-table td {
+    padding: 0.6rem;
+  }
 }
 
 @media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 0.8rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .team-card {
+    width: 100%;
+  }
+
   .player-table {
     font-size: 0.8rem;
-    margin: 1rem auto;
+    margin: 1rem 0;
   }
 
   .player-table th, .player-table td {
     padding: 0.5rem;
   }
 
-  .player-table th {
+  footer {
     font-size: 0.9rem;
   }
-
-  .player-table tr:nth-child(even) {
-    background-color: #fff;
-  }
-
-  .player-table tr:hover {
-    background-color: #f9f9f9;
-  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
