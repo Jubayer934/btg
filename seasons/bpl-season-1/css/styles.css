@@ -1,0 +1,149 @@
+/* Teams Section Styling */
+.teams {
+  text-align: center;
+  padding: 2rem;
+}
+
+.teams h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.team-card img.team-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.team-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-card p {
+  font-size: 1rem;
+  color: #555;
+}
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  background-color: #1e90ff;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Navigation Styling */
+nav {
+  background-color: #333;
+  padding: 0.5rem 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1e90ff;
+}
+
+/* Season Highlights Section */
+.season-highlights {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.season-highlights h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.season-highlights p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+/* Player Table Styling */
+.player-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.player-table th, .player-table td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+}
+
+.player-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.player-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.player-table tr:hover {
+  background-color: #f1f1f1;
+}
