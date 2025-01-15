@@ -39,11 +39,19 @@
       </div>
     </section>
   </main>
-  <div class="back-to-home">
-    <a href="index.html" class="btn-home">Back to Home</a>
+  <div class="back-to-previous">
+    <button onclick="goBack()" class="btn-back">Go Back</button>
   </div>
+  
   <footer>
     <p>&copy; 2025 Premier League Updates. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    // Function to navigate back
+    function goBack() {
+      window.history.back();
+    }
+    </script>
 </body>
 </html>

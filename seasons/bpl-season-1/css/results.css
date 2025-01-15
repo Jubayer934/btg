@@ -77,7 +77,32 @@ body {
     padding: 1rem 0;
     margin-top: 1rem;
   }
+   /* Back Button Styling */
+ .back-to-previous {
+    text-align: center;
+    margin: 2rem 0;
+  }
   
+  .btn-back {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .btn-back:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  .btn-back:active {
+    transform: scale(0.98);
+  }
   /* Responsive Design */
   @media (max-width: 768px) {
     .results {
@@ -87,30 +112,4 @@ body {
       font-size: 0.9rem;
       padding: 0.6rem 0.8rem;
     }
-  }
-  /* Back to Home Button Styling */
-.back-to-home {
-    text-align: center;
-    margin: 2rem 0;
-  }
-  
-  .btn-home {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    color: #fff;
-    background-color: #3498db;
-    text-decoration: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  .btn-home:hover {
-    background-color: #2980b9;
-    transform: scale(1.05);
-  }
-  
-  .btn-home:active {
-    transform: scale(0.98);
   }
