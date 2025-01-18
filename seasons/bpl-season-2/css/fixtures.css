@@ -1,0 +1,129 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  header {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  header p {
+    font-size: 1rem;
+    margin: 0.5rem 0 0;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  .fixtures h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Fixtures Table Styling */
+  .fixtures-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .fixtures-table th, .fixtures-table td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+  }
+  
+  .fixtures-table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .fixtures-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .fixtures-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .fixtures-table td {
+    font-size: 0.9rem;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
+   /* Back Button Styling */
+ .back-to-previous {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .btn-back {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .btn-back:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  .btn-back:active {
+    transform: scale(0.98);
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .fixtures-table {
+      font-size: 0.9rem;
+    }
+  
+    .fixtures-table th, .fixtures-table td {
+      padding: 0.6rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    header p {
+      font-size: 0.9rem;
+    }
+  
+    .fixtures-table {
+      font-size: 0.8rem;
+    }
+  
+    .fixtures-table th, .fixtures-table td {
+      padding: 0.4rem;
+    }
+  }
