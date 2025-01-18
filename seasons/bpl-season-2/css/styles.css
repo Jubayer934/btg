@@ -1,58 +1,269 @@
-/* General Body Styling */
+/* General Reset */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-  }
-  
-  /* Header Styling */
-  header {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #34495e;
-    color: #ecf0f1;
-  }
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+}
+
+/* Navigation Styling */
+nav {
+  background-color: #333;
+  padding: 1rem 0;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.nav-links li {
+  margin: 1rem 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding is included in width */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-links a:hover {
+  background-color: #1e90ff; /* Blue highlight */
+  color: #fff;
+  box-shadow: inset 0 0 0 2px #1e90ff; /* Keeps blue mark within box bounds */
+}
+
+
+
+/* Main Section Styling */
+main {
+  padding: 2rem;
+}
+
+.season-highlights {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.season-highlights h2 {
+  font-size: 2rem;
+}
+
+.season-highlights p {
+  font-size: 1.1rem;
+  margin: 1.5rem 0;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Teams Section Styling */
+.teams {
+  padding: 2rem;
+}
+
+.teams h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  width: 250px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-logo {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.team-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.team-card a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.team-card a:hover {
+  color: #0056b3;
+}
+
+/* Player Table Styling */
+.player-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.player-table th, .player-table td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+}
+
+.player-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.player-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.player-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Back Button Styling */
+.back-to-previous {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.btn-back {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-back:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.btn-back:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   header h1 {
-    margin: 0;
     font-size: 2rem;
   }
-  
-  /* Coming Soon Section */
-  .coming-soon {
-    text-align: center;
-    margin: auto;
-    padding: 2rem;
-    background-color: #1abc9c;
-    color: #2c3e50;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 400px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  header p {
+    font-size: 0.9rem;
   }
-  
-  .coming-soon h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+
+  .nav-links a {
+    font-size: 1rem;
   }
-  
-  .coming-soon p {
-    font-size: 1.5rem;
-    margin: 0;
-    font-weight: bold;
+
+  .team-card {
+    width: 220px;
   }
-  
-  /* Footer Styling */
+
+  .player-table {
+    font-size: 0.9rem;
+  }
+
+  .player-table th, .player-table td {
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 0.8rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .team-card {
+    width: 100%;
+  }
+
+  .player-table {
+    font-size: 0.8rem;
+    margin: 1rem 0;
+  }
+
+  .player-table th, .player-table td {
+    padding: 0.5rem;
+  }
+
   footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #34495e;
-    color: #ecf0f1;
+    font-size: 0.9rem;
   }
-  
+}
