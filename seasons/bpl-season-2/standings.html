@@ -1,39 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(120deg, #00bcd4, #03a9f4);
-            color: white;
-            text-align: center;
-        }
-        .container {
-            max-width: 600px;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BPL Season 1 - Standings</title>
+  <link rel="stylesheet" href="css/standings.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Coming Soon</h1>
-        <p>We're working hard to bring you something amazing. Stay tuned!</p>
-    </div>
+  <header>
+    <h1>BPL Season 2</h1>
+    <p>Team Standings</p>
+  </header>
+
+  <main>
+    <section class="standings">
+      <h2>League Standings</h2>
+      <table class="standings-table">
+        <thead>
+          <tr>
+            <th>Position</th>
+            <th>Team</th>
+            <th>Matches Played</th>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Net Run Rate (NRR)</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Bhulkara Rising Stars</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>+1.17</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Octopus Group</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>+0.70</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Royal Rangers Bhulkara</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>-3.08</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <!-- Back to Home Button -->
+  <div class="back-to-previous">
+    <button onclick="goBack()" class="btn-back">Go Back</button>
+  </div>
+  
+
+  <footer>
+    <p>&copy; 2025 Premier League Updates. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Function to navigate back
+    function goBack() {
+      window.history.back();
+    }
+    </script>
 </body>
 </html>
