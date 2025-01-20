@@ -120,12 +120,6 @@ footer {
     .standings-table th, .standings-table td {
         padding: 0.4rem; /* Reduce padding for compact design */
     }
-
-    /* Hide less important columns */
-    .standings-table th:nth-child(3), 
-    .standings-table td:nth-child(3) {
-        display: none;
-    }
 }
 
 @media (max-width: 480px) {
@@ -143,11 +137,5 @@ footer {
 
     .standings-table th, .standings-table td {
         padding: 0.2rem; /* Further reduce padding for small screens */
-    }
-
-    /* Hide more columns for small screens */
-    .standings-table th:nth-child(2), 
-    .standings-table td:nth-child(2) {
-        display: none;
     }
 }
