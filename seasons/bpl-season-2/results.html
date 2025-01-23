@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(120deg, #00bcd4, #03a9f4);
-            color: white;
-            text-align: center;
-        }
-        .container {
-            max-width: 600px;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results</title>
+  <link rel="stylesheet" href="css/results.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Coming Soon</h1>
-        <p>We're working hard to bring you something amazing. Stay tuned!</p>
-    </div>
+  <header>
+    <h1>Bhulkara Premier League</h1>
+    <p>Results & Statistics</p>
+  </header>
+
+  <main>
+    <section class="results">
+      <h2>Results Overview</h2>
+      <ul>
+        <li><a href="most_run.html">Most Run</a></li>
+        <li><a href="most_wicket.html">Most Wicket</a></li>
+        <li><a href="most_rating.html">Most Rating</a></li>
+        <li><a href="match01.html">Match 01</a></li>
+        <li><a href="match02.html">Match 02</a></li>
+        <li><a href="match03.html">Match 03</a></li>
+        <li><a href="match04.html">Match 04</a></li>
+        <li><a href="match05.html">Match 05</a></li>
+        <li><a href="match06.html">Match 06</a></li>
+        <li><a href="qualifier1.html">Qualifier One</a></li>
+        <li><a href="qualifier2.html">Qualifier Two</a></li>
+        <li><a href="final.html">Final</a></li>
+      </ul>
+    </section>
+  </main>
+  <div class="back-to-previous">
+    <button onclick="goBack()" class="btn-back">Go Back</button>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 Bhulkara Premier League. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Function to navigate back
+    function goBack() {
+      window.history.back();
+    }
+    </script>
 </body>
 </html>
